@@ -70,6 +70,7 @@ public class Main {
                 }
             }
 
+
             System.out.println("Хотите добавить еще один товар? (да/нет):  ");
             String answer = scanner.next();
 

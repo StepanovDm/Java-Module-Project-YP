@@ -7,6 +7,7 @@ public class NormFormat {
         if (value >= 10 & value <= 20) {
 
             rub = "Рублей";
+
         } else {
             rub = switch (value % 10) {
                 case 1 -> "Рубль";

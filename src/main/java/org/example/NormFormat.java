@@ -29,4 +29,10 @@ public class NormFormat {
         }
         return String.format("%.2f",sum) + " " + rub;
     }
+
+
+
+
+
+
 }

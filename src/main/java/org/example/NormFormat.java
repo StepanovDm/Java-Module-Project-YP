@@ -8,26 +8,13 @@ public class NormFormat {
 
             rub = "Рублей";
 
-
-
         } else {
-            switch (value % 10) {
-                case 1:
-                    rub = "Рубль";
-                    break;
-                case 2:
-                case 3:
-                case 4:
-                    rub = "Рубля";
-                    break;
-                case 5:
-                case 6:
-                case 7:
-                case 8:
-                case 9:
-                case 0:
-                    rub = "Рублей";
-            }
+            rub = switch (value % 10) {
+                case 1 -> "Рубль";
+                case 2, 3, 4 -> "Рубля";
+                case 5, 6, 7, 8, 9, 0 -> "Рублей";
+                default -> rub;
+            };
         }
         return String.format("%.2f",sum) + " " + rub;
     }

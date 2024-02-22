@@ -4,12 +4,11 @@ import static org.example.NormFormat.returnRub;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("На сколько человек необходимо разделить счет?");
-        int numPeople = 0;
+        int numPeople;
         while (true) {
             if (scanner.hasNextInt()) {
                 numPeople = scanner.nextInt();

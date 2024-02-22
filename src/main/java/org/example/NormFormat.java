@@ -9,6 +9,7 @@ public class NormFormat {
             rub = "Рублей";
 
 
+
         } else {
             switch (value % 10) {
                 case 1:

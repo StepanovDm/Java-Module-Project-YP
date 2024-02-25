@@ -1,6 +1,7 @@
 package org.example;
 import static org.example.NormFormat.returnRub;
 
+
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {

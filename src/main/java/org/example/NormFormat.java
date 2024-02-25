@@ -5,7 +5,6 @@ public class NormFormat {
         int value = (int) sum % 100;
         String rub = "";
         if (value >= 10 & value <= 20) {
-
             rub = "Рублей";
         } else {
             rub = switch (value % 10) {

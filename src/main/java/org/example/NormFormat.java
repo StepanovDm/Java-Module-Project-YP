@@ -1,6 +1,7 @@
 package org.example;
 
 public class NormFormat {
+
     public static String returnRub(double sum) {
         int value = (int) sum % 100;
         String rub = "";

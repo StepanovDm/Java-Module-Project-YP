@@ -49,7 +49,7 @@ public class Main {
 
             }
 
-            System.out.println("Введите стоимость товара. Стоимость должна быть в формате рубли.копейки:  ");
+            System.out.println("Введите стоимость товара. Стоимость должна быть в формате рубли,копейки:  ");
             while (true) {
                 if (scanner.hasNextDouble()) {
                     double costItem = scanner.nextDouble();
@@ -70,10 +70,10 @@ public class Main {
 
 
 
-            System.out.println("Хотите добавить еще один товар? (да/нет):  ");
+            System.out.println("Желаете добавить еще один товар? Введите \"да\"(или любой другой символ, слово) или \"Завершить\" чтобы завершить добавление товаров.");
             String answer = scanner.next();
 
-            if (answer.equalsIgnoreCase("нет")) {
+            if (answer.equalsIgnoreCase("завершить")) {
                 System.out.println("Итого: " + returnRub(sum));
 
                 double perPerson = sum / numPeople;
